@@ -337,6 +337,8 @@
       speed: 2000,
       mousewheel: true,
       simulateTouch: true,
+      allowTouchMove: true,
+      touchMoveStopPropagation:false,
       grabCursor: true,
       autoplay: {
         delay: 1800,
