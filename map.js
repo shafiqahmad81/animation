@@ -331,9 +331,13 @@
     mapSwiperInitialized = true;
 
     mapSliderSwiperInstance = new Swiper(".swiper", {
+      
       direction: "horizontal",
       loop: true,
       speed: 2000,
+      mousewheel: true,
+      simulateTouch: true,
+      grabCursor: true,
       autoplay: {
         delay: 1800,
         disableOnInteraction: false,
