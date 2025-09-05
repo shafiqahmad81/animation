@@ -322,14 +322,10 @@
   .content-wrapper{
     margin-top: 20px;
   }
-  .nav-controls{
-    text-align: start !important;
+  .contrller{
+    margin-top: 30px;
   }
-  .contrller {
-    .label{
-      text-align: start !important;
-    }
-  }
+  
 }
 
 @media screen and (min-width: 64rem) {
