@@ -166,6 +166,7 @@
     --indecator-size: 0.5rem;
     color: var(--dreamlab-light-text);
     .label {
+      text-align: end;
       display: block;
       padding-right: var(--column-space);
       &::after {
@@ -323,6 +324,11 @@
   }
   .nav-controls{
     text-align: start !important;
+  }
+  .contrller {
+    .label{
+      text-align: start !important;
+    }
   }
 }
 
