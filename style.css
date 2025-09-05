@@ -180,6 +180,7 @@
       }
     }
     .nav-controls {
+      text-align: end;
       font-size: 1.5rem;
       line-height: 1.75;
       &::after {
@@ -296,6 +297,7 @@
     text-transform: uppercase;
   }
 }
+
 @media(max-width:768px){
   .btn-close-slider{
     margin-left: 56px;
@@ -314,10 +316,13 @@
     }
   }
   .animated-circle-text{
-    bottom: -2.5rem !important;
+    bottom: -3rem !important;
   }
   .content-wrapper{
     margin-top: 20px;
+  }
+  .nav-controls{
+    text-align: start !important;
   }
 }
 
