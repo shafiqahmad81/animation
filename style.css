@@ -54,7 +54,31 @@
     left: 0;
     transform: translateX(6rem);
   }
+  .swiper {
+    overflow: hidden;                /* drag er jonno must */
+    touch-action: pan-y !important;  /* vertical scroll allow, horizontal swipe ok */
+    -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+    position: relative;
+    z-index: 10;
+  }
 
+.swiper-slide {
+  user-select: none;  /* accidental text select block */
+  -webkit-user-drag: none;
+}
+.overlay-element {
+  pointer-events: none;
+}
+.slide-content {
+  position: relative;
+  z-index: 2;              
+  pointer-events: none;    
+}
+
+.slide-content a,
+.slide-content button {
+  pointer-events: auto;   
+}
   .slide-content {
     --padding-x: 1.5rem;
     --padding-y: 2rem;
@@ -115,6 +139,7 @@
   .text-lime {
     color: var(--dreamlab-lime);
   }
+
   .slider-counter {
     margin-bottom: 1.5rem;
     .separator {

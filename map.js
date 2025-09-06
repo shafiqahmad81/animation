@@ -334,12 +334,14 @@
       
       direction: "horizontal",
       loop: true,
-      speed: 2000,
+      // speed: 2000,
       mousewheel: true,
       simulateTouch: true,
       allowTouchMove: true,
       touchMoveStopPropagation:false,
       grabCursor: true,
+      touchStartPreventDefault: false, // <-- important for mobile
+      passiveListeners: false,   
       autoplay: {
         delay: 1800,
         disableOnInteraction: false,
